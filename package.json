@@ -1,0 +1,32 @@
+{
+  "name": "testweb",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@types/sm-crypto": "^0.3.0",
+    "@types/swiper": "^6.0.0",
+    "axios": "^1.4.0",
+    "gm-crypto": "^0.1.8",
+    "less": "^4.1.3",
+    "pinyin": "^3.0.0-alpha.5",
+    "sm-crypto": "0.3.7",
+    "swiper": "^9.3.2",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-pwa": "^0.15.2",
+    "vite-plugin-style-import": "1.1.1",
+    "vite-plugin-vconsole": "^1.3.1",
+    "vue": "^3.0.4",
+    "vue-router": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@vitejs/plugin-legacy": "^4.0.4",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/compiler-sfc": "^3.3.4",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9"
+  }
+}
