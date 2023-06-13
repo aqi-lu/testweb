@@ -1,7 +1,7 @@
 <template>
   <div class="h-main">
     <div class="h-left">
-      <div class="des">公告区域</div>
+      <div class="announcement">公告区域</div>
     </div>
     <div class="h-right">
       <div class="r-top">
@@ -67,28 +67,27 @@ onMounted(() => {
   display: flex;
   justify-content: space-around;
   .h-left {
-    .des {
-      background: rgb(0 0 0 / 25%);
-      padding: 10px;
-      border-radius: 6px;
-      margin-top: 3.5px;
-      display: flex;
-      justify-content: space-between;
-      height: 100%;
-      width: 100%;
-      transition: backdrop-filter 0.3s ease-in-out;
-    }
-    .des:hover{
-      backdrop-filter: blur(10px);
-    }
+    width: 30%;
+    background: rgb(0 0 0 / 25%);
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    transition: backdrop-filter 0.3s ease-in-out;
+  }
+  .h-left:hover{
+    backdrop-filter: blur(10px);
   }
   .h-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     .r-top {
       display: flex;
       justify-content: space-around;
       .des {
         background: rgb(0 0 0 / 25%);
-        margin: 3.5px 12px 5px 5px;
+        margin: 0 12px 5px 5px;
         padding: 20px;
         border-radius: 6px;
         transition: backdrop-filter 0.3s ease-in-out;
@@ -113,7 +112,6 @@ onMounted(() => {
     }
     .r-bottom {
       display: flex;
-      margin-top: 125px;
       .des {
         background: rgb(0 0 0 / 25%);
         margin: 3.5px 12px 5px 5px;
