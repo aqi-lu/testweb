@@ -5,7 +5,9 @@
         <div class="swiper-slide">
           <banner />
         </div>
-        <div class="swiper-slide main">Slide 2</div>
+        <div class="swiper-slide main">
+          <home />
+        </div>
       </div>
     </div>
   </div>
@@ -14,6 +16,7 @@
 <script lang="ts" setup>
 import { ref, onMounted } from "vue";
 import banner from "./components/banner.vue";
+import home from "./components/home.vue"
 import "swiper/swiper-bundle.css";
 import Swiper, { Pagination, Mousewheel, Navigation } from "swiper";
 Swiper.use([Pagination, Mousewheel, Navigation])
@@ -47,11 +50,11 @@ onMounted(() => {
   font-size: 18px;
   color: #222222;
   background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: context-menu;
   width: 100%;
+  display: flex;
+  align-items: center;
+  color:#fff
 }
 
 .main {
@@ -59,7 +62,6 @@ onMounted(() => {
   width: 100%;
   background: url('@/assets/home/fly.png') center no-repeat;
   background-size: 100% 100%;
-  color: #fff;
 }
 
 </style>
